@@ -1,0 +1,127 @@
+body{
+    display: block;
+}
+
+.Main {
+    position: absolute;
+    background-color: black;
+    width: 50%;
+    height: auto;
+    padding-bottom: 3%;
+    left: 50%;
+    border-radius: 5vh;
+    transform: translate(-50%, 50%);
+}
+
+.Main img {
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    margin-top: 5%;
+    cursor: pointer;
+    width: 20vh;
+}
+
+.menu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.menu img {
+    border-radius: 50%;
+    width: 50%;
+}
+
+.menu img:hover {
+	opacity: 1;
+	-webkit-animation: flash 1.5s;
+	animation: flash 2.5s;
+}
+@-webkit-keyframes flash {
+	0% {
+		opacity: .4;
+	}
+	100% {
+		opacity: 1;
+	}
+}
+@keyframes flash {
+	0% {
+		opacity: .4;
+	}
+	100% {
+		opacity: 1;
+	}
+}
+
+.creator {
+    display: block;
+    color: white;
+    font-family: 'Black Ops One', cursive;
+    font-size: 25px;
+    padding-top: 3%;
+}
+
+.creator h2 {
+    -webkit-text-stroke: 0.5px black;
+    text-align: center;
+}
+
+.submenu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.input {
+    width: 50%;
+    height: auto;
+    font-size: 25px;
+    padding: 1%;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+}
+
+.submenu button {
+    width: 5%;
+    margin-left: 2%;
+    height: auto;
+    font-size: 25px;
+    padding: 1%;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: black;
+    color: white;
+}
+
+.submenu button:hover{
+    background-color: white;
+    color: black;
+    -webkit-transition: all 0.4s;
+    -moz-transition: all 0.4s;
+    transition: all 0.4s;
+}
+
+.btn {
+    width: 5%;
+    margin-left: 5%;
+    margin-top: 2%;
+    height: auto;
+    font-size: 25px;
+    padding: 1%;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: black;
+    color: white;
+}
+
+.btn:hover{
+    background-color: white;
+    color: black;
+    -webkit-transition: all 0.4s;
+    -moz-transition: all 0.4s;
+    transition: all 0.4s;
+}
