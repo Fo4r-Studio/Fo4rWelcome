@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 ESX = exports['es_extended']:getSharedObject()
 
 Citizen.CreateThread(function()
@@ -66,6 +65,3 @@ RegisterNUICallback('creatorcode', function(data, cb)
 		print("2")
 	end
 end)
-=======
-ESX = exports['es_extended']:getSharedObject()
->>>>>>> a210e692abe1659e62c3b4cba0df3327902e05be

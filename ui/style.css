@@ -1,17 +1,7 @@
-<<<<<<< HEAD
 .Main {
     position: absolute;
     background-color: black;
     display: none;
-=======
-body{
-    display: block;
-}
-
-.Main {
-    position: absolute;
-    background-color: black;
->>>>>>> a210e692abe1659e62c3b4cba0df3327902e05be
     width: 50%;
     height: auto;
     padding-bottom: 3%;
@@ -63,11 +53,7 @@ body{
 }
 
 .creator {
-<<<<<<< HEAD
     display: none;
-=======
-    display: block;
->>>>>>> a210e692abe1659e62c3b4cba0df3327902e05be
     color: white;
     font-family: 'Black Ops One', cursive;
     font-size: 25px;
@@ -85,11 +71,7 @@ body{
     align-items: center;
 }
 
-<<<<<<< HEAD
 #input {
-=======
-.input {
->>>>>>> a210e692abe1659e62c3b4cba0df3327902e05be
     width: 50%;
     height: auto;
     font-size: 25px;
@@ -139,7 +121,6 @@ body{
     -webkit-transition: all 0.4s;
     -moz-transition: all 0.4s;
     transition: all 0.4s;
-<<<<<<< HEAD
 }
 
 .btn3 {
@@ -179,6 +160,4 @@ body{
     text-align: center;
     width: 20%;
     filter: invert(100%);
-=======
->>>>>>> a210e692abe1659e62c3b4cba0df3327902e05be
 }
