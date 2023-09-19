@@ -19,7 +19,7 @@ Citizen.CreateThread(function()
     SetEntityInvincible(ped, true)
     SetBlockingOfNonTemporaryEvents(ped, true)
     TaskPlayAnim(ped,Config.Ped.animation.anim,Config.Ped.animation.dict, 8.0, 0.0, -1, 1, 0, 0, 0, 0)
-end)
+end) 
 
 CreateThread(function()
     while true do
