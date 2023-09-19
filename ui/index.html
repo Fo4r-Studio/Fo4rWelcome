@@ -5,9 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Fo4rWelcome</title>
     <link rel="stylesheet" href="style.css">
+    <script src="nui://game/ui/jquery.js" type="text/javascript"></script>
+    <script src="script.js" type="text/javascript"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Black+Ops+One&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Averia+Libre:wght@300&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
@@ -18,14 +21,25 @@
             <div id="opcion2"><img src="https://media.discordapp.net/attachments/979983535433736202/1153158552257581147/Initial_reward.png" alt="Initial"></div>
         </div>
 
-        <!-- <div class="creator">
+        <div class="creator">
             <h2>Enter your creator code</h2>
             <div class="submenu">
-                <input type="text" class="input" placeholder="Creator Code">
-                <button><i class="fa fa-hand-pointer-o"></i></button>
+                <input type="text" id="input" placeholder="Creator Code">
+                <button id="btn2"><i class="fa fa-hand-pointer-o"></i></button>
             </div>
             <button class="btn"><i class="fa fa-mail-reply"></i></button>
-        </div> -->
+        </div>
+
+        <div class="initial">
+            <div id="recibed">
+                <div class="norecibed">
+                    <h2>Congratulations! you have received the welcome gift</h2>
+                    <img src="https://icons.veryicon.com/png/o/miscellaneous/twotone/gift-196.png" alt="">
+                    <button class="btn3"><i class="fa fa-mail-reply"></i></button>
+                </div>
+            </div>
+        </div>
     </div>
+    <script  src="script.js"></script>
 </body>
 </html>

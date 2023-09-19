@@ -4,7 +4,7 @@ Config.Labels = {
     Press = 'Press E to open menu',
 }
 
-Config.Coords = {x = 0.0, y = 0.0, z = 0.0, h = 0.0}
+Config.Coords = {x = -1036.0082, y = -2734.3013, z = 20.1693, h = 138.3146}
 
 Config.Ped = { --else change to false
     model = "cs_milton",
@@ -23,6 +23,8 @@ Config.FirstReward = {
     },
     Carname = "akuma", --else change to false
 }
+
+Config.EnableCreatorCode = true
 
 Config.CreatorCodes = {
     "apex",
