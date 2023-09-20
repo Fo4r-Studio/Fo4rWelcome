@@ -55,6 +55,7 @@ function openmenu()
     SendNUIMessage({
         action = 'showInterface',
         creator = Config.EnableCreatorCode,
+        rw = Config.EnableReward,
         svname = Config.Labels.ServerName,
     })
 end
@@ -100,11 +101,13 @@ end)
 
 RegisterNUICallback('creatorcode', function(data, cb)
 	if data.valor ~= "" then
-		for k, v in ipairs(Config.CreatorCodes) do
-			if data.valor == v then
-				TriggerServerEvent('fo4r_welcome:creatorrewards', data.valor)
+		for k, v in pairs(Config.CreatorRewards) do
+			if data.valor == k then
+				TriggerServerEvent('fo4r_welcome:creatorrewards', k, v)
+                return
 			end
 		end
+        ESX.ShowNotification("El codigo no es valido")
 	else
 		ESX.ShowNotification("El codigo no es valido")
 	end
@@ -112,7 +115,7 @@ end)
 
 RegisterNetEvent('fo4r_welcome:registerownercar')
 AddEventHandler('fo4r_welcome:registerownercar', function(name)
-	ESX.Game.SpawnVehicle(name, vec3(Config.FirstReward.CarCoordsSpawn.x, Config.FirstReward.CarCoordsSpawn.y, Config.FirstReward.CarCoordsSpawn.z), Config.FirstReward.CarCoordsSpawn.h, function(car)
+	ESX.Game.SpawnVehicle(name, vec3(Config.CarCoordsSpawn.x, Config.CarCoordsSpawn.y, Config.CarCoordsSpawn.z), Config.CarCoordsSpawn.h, function(car)
 		TaskWarpPedIntoVehicle(PlayerPedId(),car, -1)
         SetVehicleNumberPlateText(car, plategenerator())
 		TriggerServerEvent('fo4r_welcome:givecar', ESX.Game.GetVehicleProperties(car))

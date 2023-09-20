@@ -11,6 +11,12 @@ $(document).ready(function(){
                 $('#opcion1').css('display','none');
                 $('.Main').css('display','block');
             }
+            if (a.rw) {
+                $('.Main').css('display','block');
+            } else {
+                $('#opcion2').css('display','none');
+                $('.Main').css('display','block');
+            }
         } else if (a.action == 'checkreward') {
             if (a.posible) {
                 $('.norecibed').css('display','block');

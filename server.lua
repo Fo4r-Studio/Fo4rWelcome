@@ -32,23 +32,23 @@ AddEventHandler('fo4r_welcome:addreward', function()
 end)
 
 RegisterServerEvent('fo4r_welcome:creatorrewards')
-AddEventHandler('fo4r_welcome:creatorrewards', function(code)
+AddEventHandler('fo4r_welcome:creatorrewards', function(code, data)
     local xPlayer = ESX.GetPlayerFromId(source)
 
-    if Config.CreatorRewards.items then
-        for _, item in pairs(Config.CreatorRewards.items) do
+    if data.items then
+        for _, item in pairs(data.items) do
             xPlayer.addInventoryItem(item.item, item.count)
         end
     end
 
-    if Config.CreatorRewards.money then
-        for _, money in pairs(Config.CreatorRewards.money) do
+    if data.money then
+        for _, money in pairs(data.money) do
             xPlayer.addAccountMoney(money.account, money.count)
         end
     end
 
-    if Config.CreatorRewards.Carname then
-        giveVehicle(source, xPlayer.identifier, Config.CreatorRewards.Carname)
+    if data.Carname then
+        giveVehicle(source, xPlayer.identifier, data.Carname)
     end
 
     for k , v in ipairs(GetPlayerIdentifiers(source)) do
