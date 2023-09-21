@@ -26,3 +26,7 @@ files {
   'ui/*.html',
   'ui/*.js'
 }
+
+escrow_ignore {
+  'config.lua',
+}
