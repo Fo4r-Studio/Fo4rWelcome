@@ -39,7 +39,7 @@ CreateThread(function()
         local pedc = GetEntityCoords(ped)
         if #(pedc - vec3(Config.Coords.x, Config.Coords.y, Config.Coords.z)) < 3 and not isopen then
             sleep = 0
-            ESX.ShowFloatingHelpNotification(Config.Labels.Press, vector3(Config.Coords.x, Config.Coords.y, Config.Coords.z))
+            ESX.ShowFloatingHelpNotification(Config.Labels.Press, vec3(Config.Coords.x, Config.Coords.y, Config.Coords.z))
             if IsControlPressed(0, 38) then
                 openmenu()
                 isopen = true
@@ -107,9 +107,9 @@ RegisterNUICallback('creatorcode', function(data, cb)
                 return
 			end
 		end
-        ESX.ShowNotification("El codigo no es valido")
+        ESX.ShowNotification(Config.Labels.CodeNoValid)
 	else
-		ESX.ShowNotification("El codigo no es valido")
+		ESX.ShowNotification(Config.Labels.CodeNoValid)
 	end
 end)
 

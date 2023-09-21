@@ -3,13 +3,14 @@ Config = {}
 Config.EnableCreatorCode = true
 Config.EnableReward = true
 
-Config.Webhook = 'https://discord.com/api/webhooks/1153646268166451301/TjQFOqNq785q-wJ-Mr9NTkokfzoHdwxx2Hj1eS3lDnkrg6Toj1oPlNjIW38z5KiOcJIN'
+Config.Webhook = 'YOUR_WEBHOOK_HERE'
 
 Config.Labels = {
     ServerName = "Fo4r",
     Press = 'Press ~g~[E]~w~ to open menu',
     Webhook1 = 'Has claimed the welcome package',
     Webhook2 = 'Has redeemed the code: ',
+    CodeNoValid = 'The code is not valid',
 }
 
 Config.CarCoordsSpawn = {x = -1029.14, y = -2732.87, z = 20.075, h = 240.1851}
